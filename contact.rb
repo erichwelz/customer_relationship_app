@@ -10,14 +10,3 @@ class Contact
   end
 end
 
-
-# Testing
-
-# # read test
-# contact = Contact.new("Adrian", "Carton de Wiart", "adianwiart@gmail.com", "Even cooler.")
-# puts contact.email
-
-# # write test
-# contact.note = "Test"
-# puts contact.note
-

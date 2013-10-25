@@ -7,7 +7,6 @@ class Rolodex
     contact.id = @id
     @contacts << contact
     @id += 1
-    puts 
   end
 
   def self.contacts
@@ -16,7 +15,7 @@ class Rolodex
 
   def self.display_all_contacts
     contacts.each do |contact|
-    puts "[#{contact.id-999}] ,#{contact.first_name} #{contact.last_name}"
+    puts "#{contact.id-999}. #{contact.first_name} #{contact.last_name}"
     end
   end
     

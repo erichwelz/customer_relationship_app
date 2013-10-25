@@ -87,14 +87,22 @@ class CRM
     end  
 end
 
+# Input dummy contact data
+def prime  
+  first_name = ["James", "Mark", "Angela", "Theodore", "Sarah"]
+  last_name = ["Bond", "Sheffield", "La Roche", "Michaels", "Robertson"]
+  email = ["jamesbond@mi6.gov.uk", "mshef@gmail.com", "angie@hotmail.com", "theo23@yahoo.com", "srobertson@aol.com"]
+  note = ["This guys is badass!", "He's ok.", "Super annoying", "Great customer!", "Not much to say"]
+
+  first_name.each_index do |i|
+    contact = Contact.new(first_name[i], last_name[i], email[i], note[i])
+    Rolodex.add_contact(contact)
+    Rolodex.contacts  
+  end
+end
+# End prime
+prime
+
 alpha = CRM.new("alpha")
 alpha.main_menu
-
-## TESTING ## 
-
-# puts contact.email
-
-# # write test
-# contact.note = "Test"
-# puts contact.note
 

@@ -6,8 +6,7 @@ class CRM
       @name = name
   end
 
-  def print_main_menu
-    puts 
+  def print_main_menu  
     puts "Welcome to #{@name} CRM"
     puts "[1] Add a new contact"
     puts "[2] Modify an existing contact"
@@ -66,7 +65,7 @@ class CRM
     end
 
     def delete_contact
-      puts "IMPLEMENT delete"
+      Rolodex.delete_contact
       main_menu 
     end
 
@@ -76,14 +75,14 @@ class CRM
     end
 
     def display_an_attribute
-      puts "IMPLEMENT display"
+      Rolodex.display_info_by_attribute
       main_menu
     end
 
     def exit_program
       puts "Thank you for using #{@name} CRM"
-      puts "Returning to Command Prompt"
-      puts "\n\n"
+      puts "Returning to Command Prompt\n\n"
+  
     end  
 end
 

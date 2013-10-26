@@ -1,0 +1,31 @@
+Build modify
+
+- find/select contact to change
+
+- ask user which property to change
+
+- ask user for new value
+
+- change value on contact
+
+Build display an attribute
+
+  - menu by number similar or original menu
+    first_name, last_name, email, note)
+
+    
+
+OTHER:
+puts "\e[H\e[2J"
+add out of range error handling to delete_contact module
+
+Done:
+1. Add a new contact
+3. Delete a contact
+  Build delete
+
+- implement delete via two steps
+
+- lookup index on object
+
+4. Display all the contacts

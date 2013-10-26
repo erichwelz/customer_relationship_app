@@ -1,19 +1,12 @@
 Build modify
 
-- find/select contact to change
+- select contact to change 
 
 - ask user which property to change
 
 - ask user for new value
 
 - change value on contact
-
-Build display an attribute
-
-  - menu by number similar or original menu
-    first_name, last_name, email, note)
-
-    
 
 OTHER:
 puts "\e[H\e[2J"
@@ -29,3 +22,7 @@ Done:
 - lookup index on object
 
 4. Display all the contacts
+
+5. Display an attribute
+  - menu by number similar or original menu
+    first_name, last_name, email, note)

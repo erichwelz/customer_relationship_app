@@ -7,7 +7,7 @@ class CRM
   end
 
   def print_main_menu  
-    puts "Welcome to #{@name} CRM"
+    puts "\n Welcome to #{@name} CRM"
     puts "[1] Add a new contact"
     puts "[2] Modify an existing contact"
     puts "[3] Delete a contact"
@@ -41,9 +41,6 @@ class CRM
       puts "Please enter [1] to [6]:"
     end
   end
-     # Finish off and do the rest for 3 through 6
-    # To be clear, the methods add_new_contact and modify_existing_contact
-    # haven't been defined yet
     
   def add_new_contact
     print "Enter First Name: "
@@ -60,7 +57,7 @@ class CRM
   end
 
     def modify_existing_contact
-   puts "IMPLEMENT modify"
+    Rolodex.modify_existing_contact
      main_menu
     end
 
@@ -102,6 +99,6 @@ end
 # End prime
 prime
 
-alpha = CRM.new("alpha")
+alpha = CRM.new("Betamax")
 alpha.main_menu
 
